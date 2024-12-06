@@ -10,9 +10,9 @@
 </head>
 <body>
     
-    <div class="container">
-        <div class="row mt-5 justify-content-center align-items-center">
-            <form class="card col-9 p-0 needs-validation" novalidate>
+    <div class="container-fluid">
+        <div class="row my-5 justify-content-center align-items-center">
+            <form class="card col-11 col-lg-6 p-0 needs-validation" novalidate>
                 <div class="card-header">
                   Payment form example
                 </div>
@@ -22,16 +22,16 @@
 						<div class="alert alert-danger d-none">
 							Some fields are missing
 						</div>
-                        <div class="col-5">
+                        <div class="col-md-5">
                           <label for="cardNumer" class="form-label">Card #</label>
                           <input type="text" class="form-control" id="cardNumer"  placeholder="XXXXXXXXXXXXXXXX" required>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-sm-6 col-md-3">
                           <label for="cvcNumber" class="form-label">CVC #</label>
                           <input type="text" class="form-control" id="cvcNumber" placeholder="0000" required>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-md-4">
                           <label for="validationCustomAmount" class="form-label">Amount</label>
                           <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">$</span>
@@ -39,35 +39,35 @@
                           </div>
                         </div>
 
-						<div class="col-6">
+						<div class="col-sm-6">
 							<label for="firstName" class="form-label">First name</label>
 							<input type="text" class="form-control" id="firstName" required>
 						  </div>
-						  <div class="col-6">
+						  <div class="col-sm-6">
 							<label for="lastName" class="form-label">Last name</label>
 							<input type="text" class="form-control" id="lastName" required>
 						  </div>
 
-                        <div class="col-6">
+                        <div class="col-md-6">
                           <label for="city" class="form-label">City</label>
                           <input type="text" class="form-control" id="city" required>
 
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-6 col-md-3">
                           <label for="state" class="form-label">State</label>
                           <select class="form-select" id="state" required>
                             <option selected disabled >Choose...</option>
                             <option>...</option>
                           </select>
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-6 col-md-3">
                           <label for="postalCode" class="form-label">Postal code</label>
                           <input type="text" class="form-control" id="postalCode" required>
                         </div>
 
-						<div class="col-6">
+						<div class="col-md-6">
 							<span>We accept: </span>
-							<div class="bg-secondary rounded py-1 w-75 d-flex justify-content-around">
+							<div class="col-md-9 bg-secondary rounded py-1 d-flex justify-content-around">
 								<div class="form-check d-flex align-items-center gap-1">
 									<input class="form-check-input fs-7 bg-dark" type="radio" name="paymentMethod" id="masterCard" checked>
 									<label class="form-check-label" for="masterCard">
@@ -95,7 +95,7 @@
 							</div>
 						</div>
 
-						<div class="col-6">
+						<div class="col-md-6">
 							<span>Message</span>
 							<div class="form-floating">
 								<textarea class="form-control p-2" id="message" rows="3"></textarea>
